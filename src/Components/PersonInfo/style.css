@@ -1,10 +1,16 @@
 .info-container {
-    padding-left: 20px;
+    margin: 0 auto;
+    width: 80%;
 }
 
 #person-name {
     border-bottom: 2px solid #34A5DA;
-    width: 210px;
+}
+
+.info-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .info {

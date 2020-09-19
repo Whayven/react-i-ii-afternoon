@@ -1,0 +1,11 @@
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-buttons button {
+    background: transparent;
+    border: none;
+    color: #fff;
+}

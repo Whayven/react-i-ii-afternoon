@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import data from "../../data";
-import './style.css'
+import "./style.css";
 
-import PersonInfo from '../PersonInfo'
-
+import PersonInfo from "../PersonInfo";
+import NavButtons from "../NavButtons";
 
 export default class DataContainer extends Component {
   constructor() {
@@ -11,15 +11,35 @@ export default class DataContainer extends Component {
 
     this.state = {
       people: data,
-      index: 0
+      index: 0,
     };
   }
 
+  prevButton = () => {
+    const { index } = this.state;
+    if (index === 0) {
+    } else {
+      this.setState({ index: index - 1 });
+    }
+  };
+
+  nextButton = () => {
+    const { index, people } = this.state;
+    if (index === people.length - 1) {
+    } else {
+      this.setState({ index: index + 1 });
+    }
+  };
+
   render() {
-      return (
-          <div className="container">
-              <PersonInfo person={this.state.people[this.state.index]} />
-          </div>
-      )
+    const { index, people } = this.state;
+    return (
+      <div>
+        <div className="container">
+          <PersonInfo person={people[index]} peopleLen={people.length} />
+        </div>
+        <NavButtons nextFn={this.nextButton} prevFn={this.prevButton} />
+      </div>
+    );
   }
 }
