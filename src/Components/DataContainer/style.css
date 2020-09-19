@@ -1,0 +1,5 @@
+.container {
+    display: flex;
+    background: #fff;
+    width: 80vw;
+}

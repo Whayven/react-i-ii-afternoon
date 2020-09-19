@@ -1,0 +1,10 @@
+.header {
+    color: black;
+    background: #34A5DA;
+    height: 10vh;
+}
+
+.header h3 {
+    margin: 0;
+    padding: 10px;
+}

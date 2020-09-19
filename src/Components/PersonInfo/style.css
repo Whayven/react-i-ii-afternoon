@@ -1,0 +1,18 @@
+.info-container {
+    padding-left: 20px;
+}
+
+#person-name {
+    border-bottom: 2px solid #34A5DA;
+    width: 210px;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.movie {
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
